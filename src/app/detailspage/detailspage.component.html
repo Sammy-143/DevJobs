@@ -1,0 +1,67 @@
+
+<header>
+    <div class="head-top">
+        <div class="top-left">
+            <img src="../../assets/desktop/logo.svg">
+        </div>
+        <div class="top-right">
+            <img src="../../assets/desktop/icon-sun.svg">
+            <img src="../../assets/desktop/element.svg" >
+            <img src="../../assets/desktop/icon-moon.svg">
+        </div>
+    </div>
+</header>
+
+<div *ngFor = "let item of data">
+
+
+<div class="container" >
+    <div class="container-left">
+        <div class="border" [style.backgroundColor] = "item.logoBackground">
+            <img [src]="item.logo">
+        </div>
+        <div class="container-middle">
+            <p>{{item.company}}</p>
+            <p>{{item.company}}.com</p>
+        </div>
+    </div>
+    <div class="container-right">
+       <p>Company Site</p>
+    </div>
+</div>
+<div class="main-container">
+    <div class="top-content">
+        <div class="left">
+            <p>{{item.postedAt}} . {{item.contract}}</p>
+            <p>{{item.position}}</p>
+            <p>{{item.location}}</p>
+        </div>
+        <div class="right">
+            <button>Apply Now</button>
+        </div>
+    </div>
+    <div class="dummy-text">
+        <p>{{item.description}}</p>
+        <h3>Requirements</h3>
+           <p>{{item.requirements.content}}</p>
+           <p>{{item.requirements.items}}</p>
+        <h3>What You Will Do</h3>
+           <p>{{item.role.content}}</p>
+           <p>{{item.role.items}}</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+       <div class="f-left">
+            <p>{{item.position}}</p>
+            <p>{{item.company}} .inc</p>  
+       </div>
+       <div class="btn-container">
+        <button>Apply Now</button>
+       </div>
+    </div>
+</footer>
+
+</div>
+

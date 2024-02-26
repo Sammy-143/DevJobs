@@ -1,0 +1,19 @@
+<div>
+<app-header></app-header>
+<div class="grid-container" >
+  <div class="card" *ngFor = "let item of data" (click)= "viewSingleJob()">
+    <div class="border" [style.backgroundColor] = "item.logoBackground">
+       <img src="{{item.logo}}" >
+    </div>
+        <div class="card-content">
+                <p>{{item.postedAt}} . {{item.contract}}</p>
+                <p>{{item.position}}</p>
+                <p>{{item.company}}</p>
+                <p>{{item.location}}</p>
+        </div>
+  </div>
+</div>
+<div class="btn-container">
+    <button>Load More</button>
+</div>
+</div>
