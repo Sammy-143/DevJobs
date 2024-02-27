@@ -1,7 +1,7 @@
 <div>
 <app-header></app-header>
 <div class="grid-container" >
-  <div class="card" *ngFor = "let item of data" (click)= "onCardClick(item.id)">
+  <div class="card"  *ngFor = "let item of data" (click)= "onCardClick(item)">
     <div class="border" [style.backgroundColor] = "item.logoBackground">
        <img src="{{item.logo}}" >
     </div>
