@@ -12,7 +12,6 @@ import { Observable } from 'rxjs';
 })
 export class GridContainerComponent {
   data: any;
-  Jobs: any[] = [];
 
   constructor (private dataService: DataService, private router: Router ) { 
     this.dataService.getJsonData().subscribe((res : any) =>{
@@ -20,7 +19,7 @@ export class GridContainerComponent {
      });
   }
 
-  onCardClick(job:any){
+  onCardClick(job: any){
     this.router.navigate(['/details']);
     console.log(job.id)
   }
