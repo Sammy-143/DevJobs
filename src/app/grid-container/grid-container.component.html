@@ -1,7 +1,7 @@
 <div>
 <app-header></app-header>
 <div class="grid-container" >
-  <div class="card" *ngFor = "let item of data" (click)= "viewSingleJob()">
+  <div class="card" *ngFor = "let item of data" (click)= "onCardClick(item.id)">
     <div class="border" [style.backgroundColor] = "item.logoBackground">
        <img src="{{item.logo}}" >
     </div>

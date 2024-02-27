@@ -10,4 +10,6 @@ export class DataService {
    getJsonData(){
     return this.http.get('./assets/data.json');
    }
+   
+   
 }

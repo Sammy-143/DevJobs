@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-grid-container',
@@ -16,7 +17,7 @@ export class GridContainerComponent {
      });
   }
 
-  viewSingleJob(){
+  onCardClick(){
     this.router.navigate(['/details']);
   }
 
