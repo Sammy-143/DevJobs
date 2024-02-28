@@ -12,7 +12,6 @@ import { Observable } from 'rxjs';
 
 export class GridContainerComponent {
   data: string;
-  newData: string;
 
   constructor (private dataService: DataService, private router: Router ) { 
     
@@ -23,8 +22,6 @@ export class GridContainerComponent {
       this.data = res;
      });  
   }
-
-  
 
   
   onCardClick(job: any){
