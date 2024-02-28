@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 
 export class GridContainerComponent {
-  data: string;
+  data: string
 
   constructor (private dataService: DataService, private router: Router ) { 
     

@@ -11,7 +11,7 @@ export class DataService {
   private dataSubject = new BehaviorSubject<any>(null);
   public selectedJob$: Observable<any> = this.dataSubject.asObservable();
 
-  setSelectedJob(job:any): void{
+  setSelectedJob(job: any): void{
     this.dataSubject.next(job)
   }
 
