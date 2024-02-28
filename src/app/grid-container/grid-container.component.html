@@ -1,15 +1,15 @@
 <div>
 <app-header></app-header>
 <div class="grid-container" >
-  <div class="card"  *ngFor = "let item of data" (click)= "onCardClick(item)">
-    <div class="border" [style.backgroundColor] = "item.logoBackground">
-       <img src="{{item.logo}}" >
+  <div class="card"  *ngFor = "let job of data" (click) = "onCardClick(job)">
+    <div class="border" [style.backgroundColor] = "job.logoBackground">
+       <img src="{{job.logo}}" >
     </div>
         <div class="card-content">
-                <p>{{item.postedAt}} . {{item.contract}}</p>
-                <p>{{item.position}}</p>
-                <p>{{item.company}}</p>
-                <p>{{item.location}}</p>
+                <p>{{job.postedAt}} . {{job.contract}}</p>
+                <p>{{job.position}}</p>
+                <p>{{job.company}}</p>
+                <p>{{job.location}}</p>
         </div>
   </div>
 </div>

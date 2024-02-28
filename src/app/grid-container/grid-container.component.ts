@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-
 
 
 @Component({
@@ -10,19 +10,29 @@ import { Observable } from 'rxjs';
   templateUrl: './grid-container.component.html',
   styleUrl: './grid-container.component.css'
 })
+
 export class GridContainerComponent {
-  data: any;
+  data: string;
+  newData: string;
 
   constructor (private dataService: DataService, private router: Router ) { 
+    
+  }
+   
+  ngOnInit(): void {
     this.dataService.getJsonData().subscribe((res : any) =>{
       this.data = res;
-     });
+     });  
   }
 
+  
+
+  
   onCardClick(job: any){
     this.router.navigate(['/details']);
-    console.log(job.id)
+    this.dataService.setSelectedJob(job);
   }
+
   
  
  

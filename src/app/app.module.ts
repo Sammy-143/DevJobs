@@ -8,6 +8,7 @@ import { GridContainerComponent } from './grid-container/grid-container.componen
 import { HttpClientModule } from '@angular/common/http';
 import { DetailspageComponent } from './detailspage/detailspage.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [

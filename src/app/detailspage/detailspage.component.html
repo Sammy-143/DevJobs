@@ -12,16 +12,15 @@
     </div>
 </header>
 
-<div *ngFor = "let item of data">
-
+<div  *ngIf="selectedJob">
 <div class="container" >
     <div class="container-left">
-        <div class="border" [style.backgroundColor] = "item.logoBackground">
-            <img [src]="item.logo">
+        <div class="border" [style.backgroundColor] = "selectedJob.logoBackground">
+            <img [src]="selectedJob.logo">
         </div>
         <div class="container-middle">
-            <p>{{item.company}}</p>
-            <p>{{item.company}}.com</p>
+            <p>{{selectedJob.company}}</p>
+            <p>{{selectedJob.company}}.com</p>
         </div>
     </div>
     <div class="container-right">
@@ -31,36 +30,37 @@
 <div class="main-container">
     <div class="top-content">
         <div class="left">
-            <p>{{item.postedAt}} . {{item.contract}}</p>
-            <p>{{item.position}}</p>
-            <p>{{item.location}}</p>
+            <p>{{selectedJob.postedAt}} . {{selectedJob.contract}}</p>
+            <p>{{selectedJob.position}}</p>
+            <p>{{selectedJob.location}}</p>
         </div>
         <div class="right">
             <button>Apply Now</button>
         </div>
     </div>
     <div class="dummy-text">
-        <p>{{item.description}}</p>
+        <p>{{selectedJob.description}}</p>
         <h3>Requirements</h3>
-           <p>{{item.requirements.content}}</p>
-           <p>{{item.requirements.items}}</p>
+           <p>{{selectedJob.requirements.content}}</p>
+           <p>{{selectedJob.requirements.selectedJobs}}</p>
         <h3>What You Will Do</h3>
-           <p>{{item.role.content}}</p>
-           <p>{{item.role.items}}</p>
+           <p>{{selectedJob.role.content}}</p>
+           <p>{{selectedJob.role.selectedJobs}}</p>
     </div>
 </div>
 
 <footer>
     <div class="footer-container">
        <div class="f-left">
-            <p>{{item.position}}</p>
-            <p>{{item.company}} .inc</p>  
+            <p>{{selectedJob.position}}</p>
+            <p>{{selectedJob.company}} .inc</p>  
        </div>
        <div class="btn-container">
         <button>Apply Now</button>
        </div>
     </div>
 </footer>
-
 </div>
+
+
 
