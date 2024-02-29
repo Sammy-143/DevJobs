@@ -33,7 +33,6 @@ header{
 .border{
     width: 8.75rem;
     height: 8.75rem;
-    /* background-color: #E99210; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,5 +156,25 @@ footer{
     color: #6E8098;
     font-size: 1rem;
 }
+
+
+/* QUERY FOR TABLET */
+@media (min-width: 768px) and (max-width: 1114px){
+    .head-top{
+        width: 90%;
+        margin: 0 2rem;
+    }
+    .container{
+        width: 43.063rem;
+    }
+    .main-container{
+        width: 43.063rem;
+    }
+    .footer-container{
+        width: 43.063rem;
+    }
+    
+}
+
 
    

@@ -102,5 +102,29 @@ header{
 }
 
 
-
+/* QUERY FOR TABLET */
+@media (min-width: 768px) and (max-width: 1114px){
+    .head-top{
+        width: 90%;
+        margin: 0 2rem;
+    }
+    .search-container{
+        margin: -2.5rem 0 0 2rem;
+        width: 93%;
+    }
+    .filter-title input{
+        width: 10rem;
+    }
+    .filter-location input{
+        width: 10rem;
+    }
+    .filter-time button{
+       width: 5rem;
+       height: 3rem;
+    }
+    .full-time input{
+        margin-left: -1rem;
+    }
+    
+}
 

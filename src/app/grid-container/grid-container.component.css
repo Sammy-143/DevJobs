@@ -59,3 +59,18 @@ button{
     border-radius: 0.5rem;
     cursor: pointer;
 }
+
+
+/* QUERY FOR TABLET */
+@media (min-width: 768px) and (max-width: 1114px){
+   .grid-container{
+    grid-template-columns: repeat(2, 1fr);
+    width: 92%;
+    margin: 3rem auto;
+    gap: 2rem;
+   }
+   .card{
+    width: 21.188rem;
+    height: 14.25rem;
+   }
+}
