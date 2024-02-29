@@ -1,9 +1,9 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 85%;
+    width: 90%;
     margin: 4rem 4rem;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 .border{
    width: 3.125rem;
@@ -17,7 +17,7 @@
    margin-left: 2rem;
 }
 .card{
-    width: 22.813rem;
+    width: 22.813rem; 
     height: 14.438rem;
     background-color: #fff;
     border-radius: 0.5rem;
