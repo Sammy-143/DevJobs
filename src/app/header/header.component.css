@@ -128,3 +128,16 @@ header{
     
 }
 
+
+/* QUERY FOR MOBILE */
+@media (min-width: 320px) and (max-width: 450px){
+    header{
+       background-image: url(../../assets/mobile/bg-pattern-header-mobile.svg);
+    }
+    .head-top{
+        width: 85%;
+        margin: 0 1rem;
+        margin-top: -3rem;
+    }
+
+} 
