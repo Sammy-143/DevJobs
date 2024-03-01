@@ -254,7 +254,17 @@ footer{
     footer{
         width: 23.438rem;
     }
-}  
+    .f-left p:nth-child(1){
+        display: none;
+    }
+    .f-left p:nth-child(2){
+        display: none;
+    }
+    .btn-container button{
+        margin-right: 26rem;
+        margin-top: 1.5rem;
+    }
+}
   
 
    
