@@ -38,6 +38,30 @@ header{
     border-radius: 5px;
     height: 4.1rem;
 }
+.mobile-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20.438rem;
+    height: 5rem;
+    background-color: #fff;
+    margin: 0 auto;
+    display: none;
+}
+.text p{
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #979797;
+}
+.text-right img:nth-child(1){
+   margin-bottom: 0.5rem;
+   margin-right: 1rem;
+}
+.text-right img:nth-child(2){
+    background-color: #5964E0;
+    padding: 10px;
+    margin-right: 1rem;
+}
 .filter-title{
     display: flex;
     align-items: center;
@@ -133,11 +157,21 @@ header{
 @media (min-width: 320px) and (max-width: 450px){
     header{
        background-image: url(../../assets/mobile/bg-pattern-header-mobile.svg);
+       height: 8.5rem;
     }
     .head-top{
         width: 85%;
         margin: 0 1rem;
         margin-top: -3rem;
+    }
+    .search-container{
+        display: none;
+    }
+    .mobile-search{
+        width: 90%;
+        display: block;
+        display: flex;
+        margin-top: -2.5rem;
     }
 
 } 

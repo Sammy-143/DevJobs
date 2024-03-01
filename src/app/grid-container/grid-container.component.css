@@ -80,4 +80,8 @@ button{
     .grid-container{
         grid-template-columns: repeat(1, 1fr);
     }
+    .card{
+        justify-content: center;
+        width: 20.438rem;
+    }
 }
