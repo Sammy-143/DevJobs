@@ -281,6 +281,18 @@ footer{
         
     }
 }
+
+@media (max-width: 320px){
+   .container{
+    width: 18rem;
+   }
+   .main-container{
+    width: 18rem;
+   }
+   .dummy-text p{
+    width: 16rem;
+   }
+}
   
 
    
