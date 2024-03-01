@@ -78,7 +78,6 @@ header{
 }
 .main-container{
     width: 45.625rem;
-    height: 78.563rem;
     background-color: #FFFFFF;
     margin: 3rem auto;
     border-radius: 0.5rem;
@@ -238,7 +237,6 @@ footer{
     }
     .main-container{
         width: 20.438rem;
-        height: 151.313rem;
     }
     .top-content{
         display: flex;
