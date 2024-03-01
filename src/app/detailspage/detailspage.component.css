@@ -20,7 +20,6 @@ header{
     margin-left: 1rem;
     margin-bottom: 0.3rem;
 }
-
 .container{
     display: flex;
     margin: 0 auto;
@@ -29,6 +28,8 @@ header{
     border-radius: 0.3rem;
     background-color: #FFFFFF;
     margin-top: -2.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 .border{
     width: 8.75rem;
@@ -41,10 +42,6 @@ header{
 .border img{
     height: 3rem;
     width: 4rem;
-}
-.container{
-    display: flex;
-    justify-content: space-between;
 }
 .container-left{
     display: flex;
@@ -186,5 +183,78 @@ footer{
     
 }
 
+
+
+/* QUERY FOR MOBILE */
+@media (min-width: 320px) and (max-width: 450px){
+    header{
+       background-image: url(../../assets/mobile/bg-pattern-header-mobile.svg);
+       height: 8.5rem;
+    }
+    .head-top{
+        width: 85%;
+        margin: 0 1rem;
+        margin-top: -3rem;
+    }
+    .search-container{
+        display: none;
+    }
+    .mobile-search{
+        width: 90%;
+        display: block;
+        display: flex;
+        margin-top: -2.5rem;
+    }
+    .container{
+       width: 20.438rem;
+       height: 12.813rem;
+       display: flex;
+       flex-direction: column;
+       margin-top: -2rem;
+    }
+    .border{
+        width: 3.125rem;
+        height: 3.125rem;
+        margin-left: 8rem;
+        margin-top: -1.5rem;
+    }
+    .border img{
+        width: 2.499rem;
+        height: 0.714rem;
+    }
+    .container-middle{
+        margin-left: -4rem;
+    }
+    .container-right{
+        margin: 0 2rem 2rem 5rem;
+    }
+    .main-container{
+        width: 20.438rem;
+        height: 151.313rem;
+    }
+    .top-content{
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+    .top-content p:nth-child(2){
+       font-size: 1.25rem;
+    }
+    button{
+        width: 17.438rem;
+        height: 3rem;
+    }
+    .dummy-text p{
+        width: 17.375rem;
+        margin: 2rem 1rem;
+    }
+    .dummy-text h3{
+        margin: 2rem 1rem;
+    }
+    footer{
+        width: 23.438rem;
+    }
+}  
+  
 
    

@@ -79,9 +79,11 @@ button{
 @media (min-width: 320px) and (max-width: 450px){
     .grid-container{
         grid-template-columns: repeat(1, 1fr);
+        margin-top: 3rem;
+        margin-left: 0;
     }
     .card{
-        justify-content: center;
-        width: 20.438rem;
+        height: 14.25rem;
+        margin: auto;
     }
 }
