@@ -79,7 +79,6 @@ button{
 @media (min-width: 320px) and (max-width: 450px){
     .grid-container{
         grid-template-columns: repeat(1, 1fr);
-        /* margin-left: 0; */
         margin: 3rem auto;
     }
     .card{
@@ -93,4 +92,8 @@ button{
     .card{
         width: 17rem;
     }
+    .card-content p:nth-child(4){
+        margin-top: 0;
+    }
+
 }
