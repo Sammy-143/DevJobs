@@ -111,7 +111,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-button{
+.right button{
     background-color: #5964E0;
     width: 8.813rem;
     height: 3rem;
@@ -136,7 +136,6 @@ footer{
     width: 100%;
     height: 6rem;
     background-color: #FFFFFF;
-   
 }
 .footer-container{
     width: 45.625rem;
@@ -153,7 +152,16 @@ footer{
     color: #6E8098;
     font-size: 1rem;
 }
-
+.btn-container button{
+    background-color: #5964E0;
+    width: 8.813rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
 
 /* QUERY FOR TABLET */
 @media (min-width: 768px) and (max-width: 1114px){
@@ -240,7 +248,7 @@ footer{
     .top-content p:nth-child(2){
        font-size: 1.25rem;
     }
-    button{
+    .right button{
         width: 17.438rem;
         height: 3rem;
     }
@@ -252,17 +260,25 @@ footer{
         margin: 2rem 1rem;
     }
     footer{
-        width: 23.438rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
-    .f-left p:nth-child(1){
-        display: none;
+    .footer-container{
+        display: block;
+        display: flex;
+        width: 20.438rem;
+        justify-content: center;
+        align-items: center;
     }
-    .f-left p:nth-child(2){
+    .f-left{
         display: none;
     }
     .btn-container button{
-        margin-right: 26rem;
-        margin-top: 1.5rem;
+        width: 17.438rem;
+        height: 3rem;
+        
     }
 }
   
