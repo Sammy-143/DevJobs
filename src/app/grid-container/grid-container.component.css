@@ -1,3 +1,93 @@
+
+.search-container{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -2rem 5rem 0 8rem;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 4.1rem;
+}
+.mobile-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20.438rem;
+    height: 5rem;
+    background-color: #fff;
+    margin: 0 auto;
+    display: none;
+}
+.text p{
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #979797;
+}
+.filter-title{
+    display: flex;
+    align-items: center;
+}
+.filter-title img{
+    margin-right: 1rem;
+}
+.filter-title input{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 20rem;
+    border: none;
+    font-size: 1rem;
+    color: #979797;
+}
+.filter-location{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #979797;
+    padding-left: 2rem;
+    height: 4rem;
+}
+.filter-location img{
+    margin-right: 1rem;
+}
+.filter-location input{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 20rem;
+    border: none;
+    font-size: 1rem;
+    color: #979797;
+}
+.filter-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.9rem;
+    width: 20rem;
+    border-left: 1px solid #979797;
+    padding-left: 2rem;
+    height: 4rem;
+}
+.filter-time span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.filter-time button{
+    background-color: #5964E0;
+    color: #FFFFFF;
+    border: none;
+    width: 8rem;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 1rem;
+    height: 3rem;
+}
+.full-time input{
+    margin-right: 1rem;
+}
+
+
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -63,6 +153,23 @@ button{
 
 /* QUERY FOR TABLET */
 @media (min-width: 768px) and (max-width: 1114px){
+    .search-container{
+        margin: -2.5rem 0 0 2rem;
+        width: 93%;
+    }
+    .filter-title input{
+        width: 10rem;
+    }
+    .filter-location input{
+        width: 10rem;
+    }
+    .filter-time button{
+       width: 5rem;
+       height: 3rem;
+    }
+    .full-time input{
+        margin-left: -1rem;
+    }
    .grid-container{
     grid-template-columns: repeat(2, 1fr);
     width: 92%;
@@ -85,6 +192,26 @@ button{
         width: 20rem; 
         height: 14.25rem;
         margin: auto;
+    }
+    .search-container{
+        display: none;
+    }
+    .mobile-search{
+        width: 90%;
+        display: block;
+        display: flex;
+        margin-top: -2.5rem;
+    }
+    .text-right{
+        margin: 1.5rem;
+    }
+    .text-right img:nth-child(1){
+        margin-bottom: 0.5rem;
+    }
+    .text-right img:nth-child(2){
+        margin-left: 1rem;
+        padding: 10px;
+        background-color: #5964E0;
     }
 }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -13,14 +13,17 @@ import { Observable } from 'rxjs';
 export class GridContainerComponent {
   data: string
 
-  constructor (private dataService: DataService, private router: Router ) { 
+  constructor (private dataService: DataService, private router: Router,private renderer: Renderer2 ) { 
     
   }
    
   ngOnInit(): void {
     this.dataService.getJsonData().subscribe((res : any) =>{
       this.data = res;
-     });  
+     });
+     this.dataService.currentTheme$.subscribe(theme => {
+      this.toggleDarkTheme(theme === 'dark');
+    });
   }
 
   
@@ -29,6 +32,15 @@ export class GridContainerComponent {
     this.dataService.setSelectedJob(job);
   }
 
+
+  private toggleDarkTheme(isDarkTheme: boolean): void {
+    const body = document.body;
+    if (isDarkTheme) {
+      this.renderer.addClass(body, 'dark-theme');
+    } else {
+      this.renderer.removeClass(body, 'dark-theme');
+    }
+  }
   
  
  

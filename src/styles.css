@@ -2,3 +2,14 @@ body{
     background-color: #F4F6F8;
     font-family: 'kumbh Sans', sans-serif;
 }
+
+.dark-theme {
+    background-color: #121212; /* Set your dark theme background color */
+    color: #ffffff; /* Set your dark theme text color */
+    
+  }
+  
+  body.dark-theme{
+    background-color: #121212; /* Set your dark theme background color */
+    color: #ffffff; 
+  }
