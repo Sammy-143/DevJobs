@@ -9,13 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { DetailspageComponent } from './detailspage/detailspage.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DataService } from './data.service';
+import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     GridContainerComponent,
-    DetailspageComponent
+    DetailspageComponent,
+    DarkModeToggleComponent
   ],
   imports: [
     AppRoutingModule,
