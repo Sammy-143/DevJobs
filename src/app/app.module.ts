@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatDialogModule} from '@angular/material/dialog';
 
 
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { DetailspageComponent } from './detailspage/detailspage.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DataService } from './data.service';
 import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.component';
+import { PopUpComponent } from './pop-up/pop-up.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.com
     HeaderComponent,
     GridContainerComponent,
     DetailspageComponent,
-    DarkModeToggleComponent
+    DarkModeToggleComponent,
+    PopUpComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
+    MatDialogModule
    
   ],
   providers: [],
