@@ -2,7 +2,8 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-
+import { MatDialog} from '@angular/material/dialog';
+import { PopUpComponent } from '../pop-up/pop-up.component';
 
 @Component({
   selector: 'app-grid-container',
@@ -11,10 +12,9 @@ import { Observable } from 'rxjs';
 })
 
 export class GridContainerComponent {
-  isPopupVisible: boolean = false;
   data: string
 
-  constructor (private dataService: DataService, private router: Router,private renderer: Renderer2 ) { 
+  constructor (private dataService: DataService, private router: Router,private renderer: Renderer2, private dialogRef: MatDialog ) { 
     
   }
    
@@ -42,6 +42,10 @@ export class GridContainerComponent {
       this.renderer.removeClass(body, 'dark-theme');
     }
   }
+
+   openDialog(){
+      this.dialogRef.open(PopUpComponent)
+   }
   
 
 

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+// import { MatDialog} from '@angular/material/dialog';
+import { PopUpComponent } from './pop-up/pop-up.component';
+
 
  
 
@@ -10,5 +13,8 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'devjobs';
+  
+
+  
   
 }

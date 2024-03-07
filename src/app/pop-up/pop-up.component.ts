@@ -5,12 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pop-up.component.html',
   styleUrl: './pop-up.component.css'
 })
-export class PopUpComponent implements OnInit {
+export class PopUpComponent  {
 
-   constructor(){
-    
-   }
-  ngOnInit(): void {
-    
-  }
 }

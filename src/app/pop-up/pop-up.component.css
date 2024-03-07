@@ -35,6 +35,7 @@
     height: 13.563rem;
     background-color: #FFFFFF;
     border-radius: 0.3rem;
+    display: none;
 }
 .pop button{
     width: 17.438rem;
