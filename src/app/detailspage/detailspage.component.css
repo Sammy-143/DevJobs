@@ -58,7 +58,7 @@ header{
 }
 .container-middle{
     margin-left: 4rem;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
 .container-right{
     display: flex;
@@ -90,12 +90,12 @@ header{
 .top-content p:nth-child(1){
     font-size: 1rem;
     color: #6E8098;
-    margin-bottom: -1rem;
+    margin-bottom: 0.5rem;
 }
 .top-content p:nth-child(2){
     font-size: 1.75rem;
     font-weight: bold;
-    margin-bottom: -0.3rem;
+    margin-bottom: 0.3rem;
 }
 .top-content p:nth-child(3){
     font-size: 0.875rem;
@@ -146,6 +146,7 @@ footer{
 .f-left p:nth-child(1){
     font-size: 1.25rem;
     font-weight: bold;
+    margin-top: 1rem;
 }
 .f-left p:nth-child(2){
     color: #6E8098;
