@@ -19,6 +19,41 @@
     margin: 0 auto;
     display: none;
 }
+.pop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 20.438rem;
+    height: 13.563rem;
+    background-color: #FFFFFF;
+    border-radius: 0.3rem;
+    display: none;
+}
+.first{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-bottom: 1px solid #6E8098;
+    padding-bottom: 1.5rem;
+}
+.first input{
+  border: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+.last{
+    margin-left: 1rem;
+}
+.last span{
+    margin-left: 0.7rem;
+    font-weight: bold;
+}
+.pop button{
+    width: 17.438rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
 .text p{
     margin-left: 1rem;
     font-size: 1rem;
@@ -182,6 +217,8 @@ button{
    }
 }
 
+
+
 /* QUERY FOR MOBILE */
 @media (min-width: 320px) and (max-width: 450px){
     .grid-container{
@@ -195,6 +232,72 @@ button{
     }
     .search-container{
         display: none;
+    }
+    .pop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 15rem; 
+        height: 13.563rem;
+        background-color: #FFFFFF;
+        border-radius: 0.3rem;
+    }
+    .pop button{
+        margin-left: -1rem;
+    }
+    .box {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        font-size: 17px;
+        align-items: center;
+    }
+
+    .box a {
+        display: inline-block;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 3px;
+    }
+
+    .modal {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all 0.4s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .content {
+        position: absolute;
+        background: white;
+        padding: 1em 2em;
+        border-radius: 4px;
+    }
+
+    .modal:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .box-close {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        color: #fe0606;
+        text-decoration: none;
+        font-size: 30px;
     }
     .mobile-search{
         width: 90%;

@@ -11,6 +11,7 @@ import { Observable } from 'rxjs';
 })
 
 export class GridContainerComponent {
+  isPopupVisible: boolean = false;
   data: string
 
   constructor (private dataService: DataService, private router: Router,private renderer: Renderer2 ) { 
@@ -42,8 +43,6 @@ export class GridContainerComponent {
     }
   }
   
- 
- 
 
 
 }
