@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatDialogModule} from '@angular/material/dialog';
 
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { GridContainerComponent } from './grid-container/grid-container.component';
@@ -26,6 +25,7 @@ import { PopUpComponent } from './pop-up/pop-up.component';
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
+    MatDialogModule,
     MatDialogModule
    
   ],

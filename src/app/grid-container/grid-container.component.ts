@@ -13,6 +13,8 @@ import { PopUpComponent } from '../pop-up/pop-up.component';
 
 export class GridContainerComponent {
   data: string
+  isPopUpOpened = false;
+  isElementVisible = false;
 
   constructor (private dataService: DataService, private router: Router,private renderer: Renderer2, private dialogRef: MatDialog ) { 
     
@@ -43,10 +45,18 @@ export class GridContainerComponent {
     }
   }
 
-   openDialog(){
-      this.dialogRef.open(PopUpComponent)
-   }
-  
 
+  openDialog(): void {
+    if (!this.isPopUpOpened) {
+      this.dialogRef.open(PopUpComponent, {
+        position: { top: 'top', left: 'left' },
+      });
+      this.isPopUpOpened = true;
+    }
+    
+  }
+
+  
+  
 
 }
