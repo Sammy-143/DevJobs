@@ -19,7 +19,7 @@
     margin: 0 auto;
     display: none;
 }
-.pop{
+/* .pop{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,7 +28,7 @@
     height: 13.563rem;
     background-color: #FFFFFF;
     border-radius: 0.3rem;
-    /* display: none; */
+    display: none;
 }
 .first{
     display: flex;
@@ -41,7 +41,7 @@
   border: none;
   margin-left: 1rem;
   font-size: 1rem;
-}
+} */
 .text p{
     margin-left: 1rem;
     font-size: 1rem;
@@ -225,7 +225,7 @@ button{
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        width: 20rem;  
+        width: 90%;  
         height: 13.563rem;
         background-color: #FFFFFF;
         border-radius: 0.3rem;
@@ -236,10 +236,19 @@ button{
         justify-content: center;
         align-items: center;
         font-size: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     .last{
        margin: 0 auto;
+    }
+    .last input{
+        margin-bottom: 1.5rem;
+        border: none;
+    }
+    .last span{
+        font-weight: bold;
+        margin-left: 1rem;
+        font-size: 1rem;
     }
     .content {
         position: absolute;
