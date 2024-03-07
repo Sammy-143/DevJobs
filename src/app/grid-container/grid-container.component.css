@@ -19,29 +19,6 @@
     margin: 0 auto;
     display: none;
 }
-/* .pop{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 20.438rem;
-    height: 13.563rem;
-    background-color: #FFFFFF;
-    border-radius: 0.3rem;
-    display: none;
-}
-.first{
-    display: flex;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    border-bottom: 1px solid #6E8098;
-    padding-bottom: 1.5rem;
-}
-.first input{
-  border: none;
-  margin-left: 1rem;
-  font-size: 1rem;
-} */
 .text p{
     margin-left: 1rem;
     font-size: 1rem;
@@ -220,35 +197,6 @@ button{
     }
     .search-container{
         display: none;
-    }
-    .pop{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        width: 90%;  
-        height: 13.563rem;
-        background-color: #FFFFFF;
-        border-radius: 0.3rem;
-    }
-    .pop button{
-        width: 17.438rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-    }
-    .last{
-       margin: 0 auto;
-    }
-    .last input{
-        margin-bottom: 1.5rem;
-        border: none;
-    }
-    .last span{
-        font-weight: bold;
-        margin-left: 1rem;
-        font-size: 1rem;
     }
     .content {
         position: absolute;
