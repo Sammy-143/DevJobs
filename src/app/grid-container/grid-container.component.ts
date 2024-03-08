@@ -2,7 +2,6 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { MatDialog} from '@angular/material/dialog';
 import { PopUpComponent } from '../pop-up/pop-up.component';
 
 @Component({
@@ -16,7 +15,7 @@ export class GridContainerComponent {
   isPopUpOpened = false;
   isElementVisible = false;
 
-  constructor (private dataService: DataService, private router: Router,private renderer: Renderer2, private dialogRef: MatDialog ) { 
+  constructor (private dataService: DataService, private router: Router,private renderer: Renderer2,  ) { 
     
   }
    
@@ -46,15 +45,15 @@ export class GridContainerComponent {
   }
 
 
-  openDialog(): void {
-    if (!this.isPopUpOpened) {
-      this.dialogRef.open(PopUpComponent, {
-        position: { top: 'top', left: 'left' },
-      });
-      this.isPopUpOpened = true;
-    }
+  // openDialog(): void {
+  //   if (!this.isPopUpOpened) {
+  //     this.dialogRef.open(PopUpComponent, {
+  //       position: { top: 'top', left: 'left' },
+  //     });
+  //     this.isPopUpOpened = true;
+  //   }
     
-  }
+  // }
 
   
   

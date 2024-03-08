@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MatDialogModule} from '@angular/material/dialog';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -25,8 +26,6 @@ import { PopUpComponent } from './pop-up/pop-up.component';
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
-    MatDialogModule,
-    MatDialogModule
    
   ],
   providers: [],
