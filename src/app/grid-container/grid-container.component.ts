@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, Renderer2 } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -46,6 +46,8 @@ export class GridContainerComponent {
 
  
 
+ 
+ 
 
 
 }

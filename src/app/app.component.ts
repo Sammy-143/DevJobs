@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-// import { MatDialog} from '@angular/material/dialog';
 import { PopUpComponent } from './pop-up/pop-up.component';
 
 
@@ -14,7 +13,7 @@ import { PopUpComponent } from './pop-up/pop-up.component';
 export class AppComponent {
   title = 'devjobs';
   
+searchText: string = '';
 
-  
   
 }
