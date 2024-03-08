@@ -54,7 +54,7 @@
 
 <div>
 <div class="grid-container" >
-  <div class="card"  *ngFor = "let job of data" (click) = "onCardClick(job)">
+  <div class="card"  *ngFor = "let job of data" (click) = "onCardClick(job)" >
     <div class="border" [style.backgroundColor] = "job.logoBackground">
        <img src="{{job.logo}}"  >
     </div>

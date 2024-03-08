@@ -13,7 +13,6 @@ import { PopUpComponent } from './pop-up/pop-up.component';
 export class AppComponent {
   title = 'devjobs';
   
-searchText: string = '';
 
   
 }

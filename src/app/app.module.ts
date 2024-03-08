@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 
 import { AppComponent } from './app.component';
@@ -20,7 +20,7 @@ import { PopUpComponent } from './pop-up/pop-up.component';
     GridContainerComponent,
     DetailspageComponent,
     DarkModeToggleComponent,
-    PopUpComponent
+    PopUpComponent,
   ],
   imports: [
     AppRoutingModule,
