@@ -11,7 +11,7 @@ import { PopUpComponent } from '../pop-up/pop-up.component';
 })
 
 export class GridContainerComponent {
-  data: string
+  data: any;
   isPopUpOpened = false;
   isElementVisible = false;
 
@@ -44,18 +44,8 @@ export class GridContainerComponent {
     }
   }
 
+ 
 
-  // openDialog(): void {
-  //   if (!this.isPopUpOpened) {
-  //     this.dialogRef.open(PopUpComponent, {
-  //       position: { top: 'top', left: 'left' },
-  //     });
-  //     this.isPopUpOpened = true;
-  //   }
-    
-  // }
 
-  
-  
 
 }
