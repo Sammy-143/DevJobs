@@ -93,8 +93,8 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 90%;
-    margin: 4rem 4rem;
+    width: 85%;
+    margin: 4rem 7rem;
     gap: 2rem;
 }
 .border{
