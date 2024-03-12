@@ -13,6 +13,7 @@ import { DataService } from './data.service';
 import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.component';
 import { PopUpComponent } from './pop-up/pop-up.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { PopUpComponent } from './pop-up/pop-up.component';
     DetailspageComponent,
     DarkModeToggleComponent,
     PopUpComponent,
+
   ],
   imports: [
     AppRoutingModule,

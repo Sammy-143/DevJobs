@@ -1,8 +1,11 @@
-import { Component, EventEmitter, OnInit, Output, Renderer2 } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { PopUpComponent } from '../pop-up/pop-up.component';
+import { JobService } from '../job.service';
+
+
 
 @Component({
   selector: 'app-grid-container',
@@ -11,11 +14,13 @@ import { PopUpComponent } from '../pop-up/pop-up.component';
 })
 
 export class GridContainerComponent {
-  data: any;
+  jobs: any[] = [];
+  data: [];
   isPopUpOpened = false;
   isElementVisible = false;
 
-  constructor (private dataService: DataService, private router: Router,private renderer: Renderer2,  ) { 
+
+  constructor (private dataService: DataService, private router: Router,private renderer: Renderer2,private jobService: JobService  ) { 
     
   }
    
@@ -26,7 +31,10 @@ export class GridContainerComponent {
      this.dataService.currentTheme$.subscribe(theme => {
       this.toggleDarkTheme(theme === 'dark');
     });
+
   }
+
+
 
   
   onCardClick(job: any){
@@ -44,10 +52,5 @@ export class GridContainerComponent {
     }
   }
 
- 
-
- 
- 
-
-
 }
+

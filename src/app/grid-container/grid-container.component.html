@@ -3,7 +3,7 @@
 <div class="search-container">
   <div class="filter-title">
       <img src="../../assets/desktop/icon-search.svg">
-      <input type="text" placeholder="Filter by title, companies, expertise..." >
+      <input type="text" placeholder="Filter by title, companies, expertise...">
   </div>
   <div class="filter-location">
       <img src="../../assets/desktop/icon-location.svg">
@@ -14,7 +14,7 @@
           <input type="checkbox">
           <span>Full Time Only</span>
       </div>
-      <button>Search</button>
+      <button (click)="searchJobs()">Search</button>
   </div>
 </div>
 
@@ -23,17 +23,17 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
-            <div class="pop">
-            <div class="first">
-                <img src="../../assets/desktop/icon-location.svg">
-                <input type="text" placeholder="Filter by location" >
-            </div>
-            <div class="last">
-                <input type="checkbox">
-                <span>Full Time Only</span> 
-                <button>Search</button>
-            </div>
-</div>
+          <div class="pop">
+              <div class="first">
+                  <img src="../../assets/desktop/icon-location.svg">
+                  <input type="text" placeholder="Filter by location" >
+              </div>
+              <div class="last">
+                  <input type="checkbox">
+                  <span>Full Time Only</span> 
+                  <button>Search</button>
+              </div>
+         </div>
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@
 
 <div>
 <div class="grid-container" >
-  <div class="card"  *ngFor = "let job of data" (click) = "onCardClick(job)" >
+  <div class="card"  *ngFor = "let job of data" (click) = "onCardClick(job)">
     <div class="border" [style.backgroundColor] = "job.logoBackground">
        <img src="{{job.logo}}"  >
     </div>
