@@ -59,15 +59,17 @@ export class GridContainerComponent {
   }
 
   filterJobs(): void {
-   this.filteredJobs = this.data.filter((filter) => {
-    
-     filter.position.toLowerCase().includes(this.title.toLowerCase());
-     filter.location.toLowerCase().includes(this.location.toLowerCase());
-     !this.fullTime || filter.contract.toLowerCase() === 'full time'
-    //  console.log(filter);
-     
-   })
+    this.filteredJobs = this.data.filter((job) => {
+      const titleMatch = job.position.toLowerCase().includes(this.title.toLowerCase());
+      const locationMatch = job.location.toLowerCase().includes(this.location.toLowerCase());
+      const contractMatch = !this.fullTime || job.contract.toLowerCase() === 'full time';
+  
+      // return titleMatch && locationMatch && contractMatch;
+      console.log(titleMatch && locationMatch && contractMatch);
+      
+    });
   }
+  
 
 }
 
