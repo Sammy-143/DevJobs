@@ -26,12 +26,12 @@
           <div class="pop">
               <div class="first">
                   <img src="../../assets/desktop/icon-location.svg">
-                  <input type="text" placeholder="Filter by location" >
+                  <input type="text" placeholder="Filter by location"  [(ngModel)]="location">
               </div>
               <div class="last">
                   <input type="checkbox">
                   <span>Full Time Only</span> 
-                  <button>Search</button>
+                  <button (click)="filterJobs()">Search</button>
               </div>
          </div>
         </div>
