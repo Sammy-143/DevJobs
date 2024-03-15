@@ -41,12 +41,12 @@
 
 
 <div class="mobile-search">
-  <div class="text">
-      <p>Filter by title...</p>
+  <div class="text" >
+    <input type="text" placeholder="Filter by title..." [(ngModel)]="location">
   </div>
   <div class="text-right">
       <img src="../../assets/mobile/icon-filter.svg"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-      <img src="../../assets/mobile/mobile-search.svg">
+      <img src="../../assets/mobile/mobile-search.svg" (click)="filterJobs()">
   </div>
 </div>
 <app-pop-up></app-pop-up>
@@ -54,7 +54,7 @@
 
 <div>
 <div class="grid-container" >
-  <div class="card"  *ngFor = "let job of data" (click) = "onCardClick(job)">
+  <div class="card"  *ngFor = "let job of filteredJobs" (click) = "onCardClick(job)">
     <div class="border" [style.backgroundColor] = "job.logoBackground">
        <img src="{{job.logo}}"  >
     </div>

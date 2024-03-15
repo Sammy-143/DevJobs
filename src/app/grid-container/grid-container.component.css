@@ -19,7 +19,7 @@
     margin: 0 auto;
     display: none;
 }
-.text p{
+.text input{
     margin-left: 1rem;
     font-size: 1rem;
     color: #979797;
@@ -111,10 +111,11 @@
 .card{
     width: 22.813rem; 
     height: 14.438rem;
-    background-color: #fff;
+    background-color: var(--default-card-color);
     border-radius: 0.5rem;
     box-shadow: 1px solid #fff;
 }
+
 .card-content{
    margin-left: 2rem;
 }

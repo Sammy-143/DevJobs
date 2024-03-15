@@ -1,17 +1,18 @@
 body{
-    background-color: #F4F6F8;
+    background-color: var(--default-bg-color);
     font-family: 'kumbh Sans', sans-serif;
     position: relative;
 }
-.dark-theme {
-    background-color: #121212; 
-    color: #ffffff; 
-    
-  }
-  
-.dark-theme body{
-    background-color: #121212; 
+.dark-theme{
+    background-color: var(--dark-bg-color); 
     color: #ffffff; 
   }
 
+  :root{
+    --default-bg-color: #F4F6F8;
+    --default-card-color: #ffffff;
+    --dark-bg-color: #121721;
+    --dark-card-color: #979797;
+  }
+ 
 

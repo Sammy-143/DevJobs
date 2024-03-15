@@ -19,10 +19,11 @@ export class GridContainerComponent {
   data: any[];
   isPopUpOpened = false;
   isElementVisible = false;
-  filteredJobs: any[];
   title: string = '';
-  location: string = ''
-  fullTime: boolean = false
+  location: string = '';
+  fullTime: boolean = false;
+  filteredJobs:any[]=[]
+  
 
 
   constructor (private dataService: DataService, private router: Router,private renderer: Renderer2,private jobService: JobService  ) { 
@@ -32,7 +33,8 @@ export class GridContainerComponent {
   ngOnInit(): void {
     this.dataService.getJsonData().subscribe((res : any) =>{
       this.data = res;
-      this.filteredJobs = res
+      this.filteredJobs = this.data
+      
      });
      this.dataService.currentTheme$.subscribe(theme => {
       this.toggleDarkTheme(theme === 'dark');
@@ -58,17 +60,21 @@ export class GridContainerComponent {
     }
   }
 
-  filterJobs(): void {
-    this.filteredJobs = this.data.filter((job) => {
-      const titleMatch = job.position.toLowerCase().includes(this.title.toLowerCase());
-      const locationMatch = job.location.toLowerCase().includes(this.location.toLowerCase());
-      const contractMatch = !this.fullTime || job.contract.toLowerCase() === 'full time';
-  
-      // return titleMatch && locationMatch && contractMatch;
-      console.log(titleMatch && locationMatch && contractMatch);
-      
+  filterJobs() {
+    
+      this.filteredJobs = this.data.filter(job => {
+    
+      let titleMatch = job.position.toLowerCase().includes(this.title.toLowerCase()) || job.company.toLowerCase().includes(this.title.toLowerCase());
+      let locationMatch = job.location.toLowerCase().includes(this.location.toLowerCase());
+      let fullTimeMatch = !this.fullTime || job.contract.toLowerCase() === 'full time';
+
+      return titleMatch && locationMatch && fullTimeMatch;
     });
+
+ 
+    // console.log(this.filteredJobs);
   }
+  
   
 
 }
