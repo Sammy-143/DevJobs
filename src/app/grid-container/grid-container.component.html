@@ -1,21 +1,22 @@
 
 <app-header></app-header>
+
 <div class="search-container">
-  <div class="filter-title">
-      <img src="../../assets/desktop/icon-search.svg">
-      <input type="text" [(ngModel)]="title" placeholder="Filter by title, companies, expertise..." >
-  </div>
-  <div class="filter-location">
-      <img src="../../assets/desktop/icon-location.svg">
-      <input type="text" [(ngModel)]="location" placeholder="Filter by location...">
-  </div>
-  <div class="filter-time" style="position: relative;">
-      <div class="full-time">
-          <input type="checkbox" [(ngModule)]="fullTime">
-          <span>Full Time Only</span>
-      </div>
-      <button (click)="filterJobs()">Search</button>
-  </div>
+    <div class="filter-title">
+        <img src="../../assets/desktop/icon-search.svg">
+        <input type="text" [(ngModel)]="title" placeholder="Filter by title, companies, expertise..." >
+    </div>
+    <div class="filter-location">
+        <img src="../../assets/desktop/icon-location.svg">
+        <input type="text" [(ngModel)]="location" placeholder="Filter by location...">
+    </div>
+    <div class="filter-time" style="position: relative;">
+        <div class="full-time">
+          <input type="checkbox" [(ngModel)]="fullTime">
+            <span>Full Time Only</span>
+        </div>
+        <button (click)="filterJobs()">Search</button>
+    </div>
 </div>
 
 

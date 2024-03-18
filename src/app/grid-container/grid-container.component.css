@@ -40,6 +40,9 @@
     font-size: 1rem;
     color: #979797;
 }
+.filter-title input:focus {
+    outline: none;
+  }
 .filter-location{
     display: flex;
     align-items: center;
@@ -47,6 +50,9 @@
     padding-left: 2rem;
     height: 4rem;
 }
+.filter-location input:focus {
+    outline: none;
+  }
 .filter-location img{
     margin-right: 1rem;
 }
@@ -115,7 +121,6 @@
     border-radius: 0.5rem;
     box-shadow: 1px solid #fff;
 }
-
 .card-content{
    margin-left: 2rem;
 }
