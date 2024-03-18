@@ -8,8 +8,6 @@ import { Jobs } from '../jobs';
 
 
 
-
-
 @Component({
   selector: 'app-grid-container',
   templateUrl: './grid-container.component.html',
@@ -23,7 +21,7 @@ export class GridContainerComponent {
   isElementVisible = false;
   title: string = '';
   location: string = '';
-  fullTime: boolean = false;
+  fullTime: boolean = true;
   filteredJobs:any[]=[]
   
 
