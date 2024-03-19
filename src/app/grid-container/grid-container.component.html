@@ -55,7 +55,7 @@
 
 <div>
 <div class="grid-container" >
-  <div class="card"  *ngFor = "let job of filteredJobs" (click) = "onCardClick(job)"  [class.dark-theme]="isDarkTheme">
+  <div class="card"  *ngFor="let job of filteredJobs | slice:0:cardsToDisplay" (click) = "onCardClick(job)"  [class.dark-theme]="isDarkTheme">
     <div class="border" [style.backgroundColor] = "job.logoBackground">
        <img src="{{job.logo}}"  >
     </div>
@@ -68,6 +68,6 @@
   </div>
 </div> 
 <div class="btn-container">
-    <button>Load More</button>
+    <button (click)="loadMoreCards() ">Load More</button>
 </div>
 </div>

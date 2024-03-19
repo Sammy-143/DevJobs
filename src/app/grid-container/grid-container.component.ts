@@ -23,6 +23,7 @@ export class GridContainerComponent {
   location: string = '';
   fullTime: boolean = true;
   filteredJobs:any[]=[]
+  cardsToDisplay: number = 9; 
   
 
 
@@ -70,12 +71,13 @@ export class GridContainerComponent {
 
       return titleMatch && locationMatch && fullTimeMatch;
     });
-
  
     // console.log(this.filteredJobs);
   }
-  
-  
 
+  loadMoreCards() {
+    this.cardsToDisplay +=6;
+  }
 }
+
 
