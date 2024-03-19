@@ -1,18 +1,32 @@
 body{
-    background-color: var(--default-bg-color);
+    background-color: var(--primary-clr);
     font-family: 'kumbh Sans', sans-serif;
     position: relative;
 }
-.dark-theme{
+/* .dark-theme{
     background-color: var(--dark-bg-color); 
     color: #ffffff; 
-  }
+  } */
 
-  :root{
+   /* :root{
     --default-bg-color: #F4F6F8;
     --default-card-color: #ffffff;
     --dark-bg-color: #121721;
     --dark-card-color: #979797;
-  }
+  }  */
+  :root{
+    --primary-clr: #F4F6F8;
+    --secondary-clr: #ffffff;
+    --tertiary-clr: #19202D;
+    --fourth-clr: #8C98C6;
+    --fifth-clr: #20222F;
+}
+.dark-theme{
+  --primary-clr: #121721;
+  --secondary-clr: #19202D;
+  --tertiary-clr: #FFFFFF;
+  --fourth--clr: #63687D ;
+  --fifth-clr: #F7F9FF;
+}
  
 

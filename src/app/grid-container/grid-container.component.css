@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     margin: -2rem 5rem 0 8rem;
-    background-color: #fff;
+    background-color: var(--secondary-clr);
     border-radius: 5px;
     height: 4.1rem;
 }
@@ -15,14 +15,14 @@
     align-items: center;
     width: 20.438rem;
     height: 5rem;
-    background-color: #fff;
+    background-color:  var(--secondary-clr);
     margin: 0 auto;
     display: none;
 }
 .text input{
     margin-left: 1rem;
     font-size: 1rem;
-    color: #979797;
+    color: var(--secondary-clr);
 }
 .filter-title{
     display: flex;
@@ -38,7 +38,7 @@
     height: 4rem;
     border: none;
     font-size: 1rem;
-    color: #979797;
+    color: var(--secondary-clr);
 }
 .filter-title input:focus {
     outline: none;
@@ -49,6 +49,7 @@
     border-left: 1px solid #979797;
     padding-left: 2rem;
     height: 4rem;
+    background-color: var(--secondary-clr);
 }
 .filter-location input:focus {
     outline: none;
@@ -63,7 +64,7 @@
     height: 4rem;
     border: none;
     font-size: 1rem;
-    color: #979797;
+    color: var(--secondary-clr);
 }
 .filter-time{
     display: flex;
@@ -94,6 +95,9 @@
 .full-time input{
     margin-right: 1rem;
 }
+.full-time span{
+    color: var(--tertiary-clr);
+}
 
 
 .grid-container{
@@ -117,7 +121,7 @@
 .card{
     width: 22.813rem; 
     height: 14.438rem;
-    background-color: var(--default-card-color);
+    background-color: var(--secondary-clr);
     border-radius: 0.5rem;
     box-shadow: 1px solid #fff;
 }
@@ -128,7 +132,7 @@
     color: #6E8098;
 }
 .card-content p:nth-child(2){
-  color: #19202D;
+  color: var(--tertiary-clr);
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -248,7 +252,7 @@ button{
     margin: 0 auto;
     width: 20.438rem;
     height: 13.563rem;
-    background-color: #FFFFFF;
+    background-color: var(--secondary-clr);
     border-radius: 0.3rem;
     /* display: none; */
 }
@@ -275,7 +279,7 @@ button{
     margin: 0 auto;
     width: 90%;  
     height: 13.563rem;
-    background-color: #FFFFFF;
+    background-color: var(--secondary-clr);
     border-radius: 0.3rem;
 }
 .pop button{
@@ -289,7 +293,7 @@ button{
     background-color: #5964E0;
     border: none;
     border-radius: 0.3rem;
-    color: #fff;
+    color: var(--secondary-clr);
 }
 .last{
    margin: 0 auto;
