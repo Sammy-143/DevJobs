@@ -38,7 +38,7 @@
     height: 4rem;
     border: none;
     font-size: 1rem;
-    color: var(--secondary-clr);
+    background-color: var(--secondary-clr);
 }
 .filter-title input:focus {
     outline: none;
@@ -49,7 +49,6 @@
     border-left: 1px solid #979797;
     padding-left: 2rem;
     height: 4rem;
-    background-color: var(--secondary-clr);
 }
 .filter-location input:focus {
     outline: none;
@@ -64,7 +63,8 @@
     height: 4rem;
     border: none;
     font-size: 1rem;
-    color: var(--secondary-clr);
+    background-color: var(--secondary-clr);
+    /* color: var(--secondary-clr); */
 }
 .filter-time{
     display: flex;
@@ -294,6 +294,12 @@ button{
     border: none;
     border-radius: 0.3rem;
     color: var(--secondary-clr);
+}
+.text input{
+    background-color: var(--secondary-clr);
+}
+.text input:focus {
+    outline: none;
 }
 .last{
    margin: 0 auto;
