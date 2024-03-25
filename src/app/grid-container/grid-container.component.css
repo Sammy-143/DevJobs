@@ -322,10 +322,10 @@ button{
   }
   .text-right img:nth-child(1){
     margin-bottom: -4rem;
+    margin-left: 0.5rem;
   }
   .text-right img:nth-child(2){
      margin-bottom: 1.5rem;
-     /* margin-left: -2rem; */
   }
   
 }
